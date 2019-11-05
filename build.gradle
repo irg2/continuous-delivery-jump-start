@@ -5,13 +5,14 @@ buildscript {
 
     dependencies {
         classpath 'com.bmuschko:gradle-tomcat-plugin:2.2.2'
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.8"
     }
 }
 
 apply plugin: 'war'
 apply plugin: 'idea'
 apply plugin: 'com.bmuschko.tomcat'
-apply plugin "org.sonarqube" version "2.7"
+apply plugin: "org.sonarqube"
 
 group = 'org.gradle.training'
 
