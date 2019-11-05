@@ -11,6 +11,7 @@ buildscript {
 apply plugin: 'war'
 apply plugin: 'idea'
 apply plugin: 'com.bmuschko.tomcat'
+apply plugin "org.sonarqube" version "2.7"
 
 group = 'org.gradle.training'
 
@@ -21,9 +22,6 @@ repositories {
     mavenCentral()
 }
 
-plugins {
-  id "org.sonarqube" version "2.7"
-}
 
 dependencies {
     compile 'ch.qos.logback:logback-classic:1.1.2'
