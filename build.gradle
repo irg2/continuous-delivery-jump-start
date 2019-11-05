@@ -21,6 +21,10 @@ repositories {
     mavenCentral()
 }
 
+plugins {
+  id "org.sonarqube" version "2.7"
+}
+
 dependencies {
     compile 'ch.qos.logback:logback-classic:1.1.2'
     compile 'org.springframework:spring-webmvc:4.1.1.RELEASE'
